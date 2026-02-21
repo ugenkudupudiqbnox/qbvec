@@ -1,0 +1,17 @@
+[package]
+name = "qbvec"
+version = "0.1.0"
+edition = "2021"
+description = "An embedded, enterprise-grade vector memory engine"
+license = "MIT"
+
+[dependencies]
+rusqlite = { version = "0.38.0", features = ["bundled"] }
+hnsw_rs = "0.3.3"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+thiserror = "2.0"
+uuid = { version = "1.17", features = ["v4"] }
+
+[dev-dependencies]
+tempfile = "3.20"
